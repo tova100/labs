@@ -1,13 +1,11 @@
-
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.20;
+
 import {console} from "forge-std/Test.sol";
 import "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 import "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 
-
 contract Auction {
-    
     address seller;
     bool active;
     address[] public allSuggest;
@@ -33,11 +31,11 @@ contract Auction {
     }
 
     function addSuggest(uint256 amount) public {
-        console.log('amount', amount);
-        require(active == true, 'The auction has ended');
-        require(block.timestamp < SEVEN_DAYS, 'the time over of auction');
-        require(max < amount, 'You should offer a higher amount');
-        
+        console.log("amount", amount);
+        require(active == true, "The auction has ended");
+        require(block.timestamp < SEVEN_DAYS, "the time over of auction");
+        require(max < amount, "You should offer a higher amount");
+
         // If the suggestion already exists, refund the previous amount
         if (suggest[msg.sender].isActive) {
             suggest[msg.sender].isActive = false;
@@ -46,7 +44,7 @@ contract Auction {
 
         // Check if the sender has enough balance
         require(msg.sender.balance >= amount, "You do not have enough money");
-        
+
         // Update the suggestion
         allSuggest.push(msg.sender);
         suggest[msg.sender].amount = amount;
@@ -54,10 +52,10 @@ contract Auction {
     }
 
     function removeSuggest() public {
-        require(active == true, 'The auction has ended');
+        require(active == true, "The auction has ended");
         require(block.timestamp < SEVEN_DAYS, "The Auction is over");
-        require(suggest[msg.sender].isActive, 'You don\'t have a suggestion');
-        
+        require(suggest[msg.sender].isActive, "You don\'t have a suggestion");
+
         // Refund the suggestion amount
         payable(msg.sender).transfer(suggest[msg.sender].amount);
         suggest[msg.sender].isActive = false;
@@ -77,9 +75,8 @@ contract Auction {
     //     }
     // }
 }
-// // הכנסת הצעה חדשה 
-// // עידכון 
-// // הסרה ולהחזיר את בכסף 
-// // זוכה ולהחזיר את הכסף 
+// // הכנסת הצעה חדשה
+// // עידכון
+// // הסרה ולהחזיר את בכסף
+// // זוכה ולהחזיר את הכסף
 // // nft erc721
-
