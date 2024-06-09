@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "ERC20",
+    "specfile": "/home/user/Documents/ToviCohen/tutorials-code/lesson2_started/erc20/ERC20Fixed.spec",
+    "specfileOrigRelpath": "ERC20Fixed.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

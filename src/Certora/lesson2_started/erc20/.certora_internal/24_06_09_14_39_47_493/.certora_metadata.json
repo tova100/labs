@@ -1,0 +1,28 @@
+{
+    "CLI_version": "7.6.3",
+    "branch": "master",
+    "certora_ci_client": null,
+    "conf": {
+        "files": [
+            "ERC20.sol"
+        ],
+        "process": "emv",
+        "solc": "solc",
+        "verify": "ERC20:ERC20.spec"
+    },
+    "conf_path": null,
+    "cwd_relative": "lesson2_started/erc20",
+    "dirty": false,
+    "main_spec": "ERC20.spec",
+    "origin": "git@github.com:Certora/tutorials-code.git",
+    "raw_args": [
+        "/home/user/Documents/ToviCohen/tutorials-code/certora-work/bin/certoraRun",
+        "ERC20.sol",
+        "--verify",
+        "ERC20:ERC20.spec",
+        "--solc",
+        "solc"
+    ],
+    "revision": "059897076cff816abc19c8c6df2d7678b0e99ac4",
+    "timestamp": "1717922387.151109"
+}

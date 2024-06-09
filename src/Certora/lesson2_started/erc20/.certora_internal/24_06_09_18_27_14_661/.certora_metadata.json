@@ -1,0 +1,28 @@
+{
+    "CLI_version": "7.7.0",
+    "branch": "master",
+    "certora_ci_client": null,
+    "conf": {
+        "files": [
+            "ERC20.sol"
+        ],
+        "process": "emv",
+        "solc": "solc",
+        "verify": "ERC20:ERC20Fixed.spec"
+    },
+    "conf_path": null,
+    "cwd_relative": "src/Certora/lesson2_started/erc20",
+    "dirty": true,
+    "main_spec": "ERC20Fixed.spec",
+    "origin": "git@github.com:tova100/labs.git",
+    "raw_args": [
+        "/home/user/.local/bin/certoraRun",
+        "ERC20.sol",
+        "--verify",
+        "ERC20:ERC20Fixed.spec",
+        "--solc",
+        "solc"
+    ],
+    "revision": "60bdb71833b5c4801669e8ef165373aae781b66d",
+    "timestamp": "1717936034.883283"
+}
