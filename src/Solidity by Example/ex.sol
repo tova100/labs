@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20
+pragma solidity ^0.8.20;
 contract HelloWorld{
     string public greet="hello world";
 }
 contract Counter{
     uint256 public count;
-    function getCount()public view return uint256{
+    function getCount()public view returns (uint256){
      return count;   
     }
     function inc ()public {
