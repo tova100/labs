@@ -31,7 +31,7 @@ contract Lending {
     uint256 public totalDeposit;
     uint256 public totalCollateral;
     IERC20 DAI;
-    
+
     IERC20 tokenDai;
     IERC20 tokenETH;
     uint256 public maxLTV = 4;

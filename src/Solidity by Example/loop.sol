@@ -11,7 +11,7 @@ contract Loop{
                 break;
             }
         }
-        uint j=0
+        uint j=0;
         while(j<5){
             j++;
         }
