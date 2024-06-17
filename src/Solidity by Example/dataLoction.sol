@@ -20,9 +20,9 @@ contract DataLocation {
         MyStruct memory myMemStruct = MyStruct(0);
     }
 
-    function _f(uint256[] storage arr, mapping(uint256 => address) map, MyStruct storage myStruct) public internal {
-        //
-    }
+    // function _f(uint256[] storage arr, mapping(uint256 => address) map, MyStruct storage myStruct) public internal {
+    //     //
+    // }
     function g(uint256[] memory _arr) public returns (uint256[] memory) {}
 
     function h(uint256[] calldata _arr) external {}

@@ -6,7 +6,7 @@ contract TestContract is Test{
     LettoryGame lettorygame;
   
     function testBaccdorCall()public{
-     address public alice=vm.addr(1);
+    address public alice=vm.addr(1);
     address public bob=vm.addr(2);
     lettorygame =new LettoryGame();
     console.log("alice will not be a winner ");

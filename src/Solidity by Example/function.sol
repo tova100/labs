@@ -2,24 +2,24 @@
 pragma solidity ^0.8.20;
 
 contract Function{
-    function returnMany()public view pure returns(uint256,bool,uint256){
+    function returnMany()public pure returns(uint256,bool,uint256){
     return(1,true,2);
     }
-    function named()public view pure returns(uint256 v,bool l,uint256 i){
+    function named()public  pure returns(uint256 v,bool l,uint256 i){
        return(1,true,2);
     }
-    function assigned()public view pure returns(uint256 v,bool l,uint256 i){
+    function assigned()public  pure returns(uint256 v,bool l,uint256 i){
         v=2;
         l=true;
         i=1;
     }
-    function destructuringAssignments()public view pure returns(uint256 x,bool l,uint256 c,uint256 b){
+    function destructuringAssignments()public  pure returns(uint256 x,bool l,uint256 c,uint256 b){
         (uint256 x,bool l,uint256 c)=returnMany();
-        (uint256,uint256 l)= (2,3,3);
+        (uint256 x,uint256 l)= (2,3,3);
         return (x,l,c,b);
     }
     function arrInput()public{}
-    uint256 []memory arr;
+    uint256 [] arr;
     function arrOutput()public view  returns(uint256[]memory arr){
         return arr;
     }

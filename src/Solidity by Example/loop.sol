@@ -7,7 +7,7 @@ contract Loop{
             if(i==10){
                 continue;
             }
-            elseif(i==5){
+            else if(i==5){
                 break;
             }
         }

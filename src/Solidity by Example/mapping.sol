@@ -22,6 +22,6 @@ contract NesredMapping{
         myMap[addr][i]=b;
     }
     function remove (address addr,uint256 i )public{
-        delete myMap[addr][i];;
+        delete myMap[addr][i];
     }
 }
